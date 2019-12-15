@@ -19,9 +19,11 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
+  [{:name=>"A", :occupation=>"B"},{:name=>"C", :occupation=>"D"}]
 end
 
 def aoh_lookup(aoh, row, key)
+  return aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
